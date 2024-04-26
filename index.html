@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap"
+     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet"/>
+    <!-- <link rel="icon" href="data:,"> -->
+</head>
+<body>
+    <!-- responsive dropdown menu -->
+   <!--=============== HEADER ===============-->
+   <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="#" class="nav__logo">
+             <i class="ri-planet-line"></i> SkyMart
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+
+       <!--=============== NAV MENU ===============-->
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="#" class="nav__link">Home</a></li>
+             <li>
+               <a href="Account/account.html" class="nav__link" target="_blank">
+                    Accounts
+               </a>
+            </li>
+             <!--=============== DROPDOWN 1 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                  <li>
+                     <a href="#" class="dropdown__link">
+                        <i class="ri-heart-2-line"></i>
+                        Wishlisht
+                     </a>                          
+                  </li>
+                   <li>
+                      <a href="#" class="dropdown__link" target="_blank">
+                        <i class="ri-customer-service-fill"></i> Special Support
+                      </a>
+                   </li>
+                   <li>
+                     <a href="#" class="dropdown__link">
+                       <i class="ri-shopping-bag-2-fill"></i>
+                       Bag
+                     </a>                          
+                  </li>
+                  
+                   <!--=============== DROPDOWN SUBMENU ===============-->
+                   <li class="dropdown__subitem">
+                      <div class="dropdown__link">
+                        <i class="ri-shopping-bag-2-fill"></i>Products<i class="ri-add-line dropdown__add"></i>
+                      </div>
+
+                      <ul class="dropdown__submenu">
+                        
+                         <li>
+                            <a href="#" class="dropdown__sublink">
+                              Accessory
+                            </a>
+                         </li>
+ 
+                         <li>
+                            <a href="#" class="dropdown__sublink">
+                               Men's 
+                            </a>
+                         </li>
+                           <li>
+                              <a href="#" class="dropdown__sublink">
+                                 Women's
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown__sublink">
+                                 Baby's 
+                              </a>
+                           </li>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+             
+             <li><a href="#" class="nav__link"></a></li>
+
+             <!--=============== DROPDOWN 2 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link">
+                  <i class="ri-earth-line"></i>
+                   Users Map <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+                
+                <ul class="dropdown__menu">
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/armenia.png" alt="Armenia" 
+                        width="30" height="30">
+                        Armenia
+                     </a>                          
+                  </li>
+                   <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/italy.png" alt="italy" 
+                        width="30" height="30">
+                        Italy
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/brazil.png" alt="brazil" 
+                        width="30" height="30">
+                        Brazil
+                     </a>                          
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/french-guiana.png" alt="french"
+                        width="30" height="30">
+                        French
+                     </a>                          
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/ukraine.png" alt="ukraine"
+                        width="30" height="30">
+                        Ukraine
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/germany.png" alt="germany"
+                        width="30" height="30">
+                        Germany
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/greece.png" alt="greece"
+                        width="30" height="30">
+                        Greece
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/united-kingdom.png" alt="united-kingdom"
+                        width="30" height="30">
+                        United-Kingdom
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="dropdown__sublink">
+                        <img src="/img/Map/russian-federatio.png" alt="russian-federatio"
+                        width="30" height="30">
+                        Russian
+                     </a>
+                  </li>
+                </ul>
+             </li>
+          </ul>
+       </div>
+    </nav>
+   </header>
+   <!--  - #CATEGORY -->
+      <section class="section category">
+         <div class="container">
+           <ul class="category-list">
+               <!-- Men-->
+               <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-1.jpg" 
+                     alt="Sunglass & eye" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Accessory/men_sunglasses.html" class="btn btn-secondary" target="_blank">
+                        Men Sunglass
+                     </a>
+               </li>
+               <!--Women-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category1_sun.jpg" 
+                     alt="Women Sunglass" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Accessory/women_sunglasses.html" class="btn btn-secondary" target="_blank">
+                        Women Sunglass
+                     </a>
+                  </li>
+                  <!--Men-->
+                     <li class="category-item">
+                        <figure class="category-banner">
+                        <img src="/img/category-4.jpg" 
+                        alt=" Men
+                        Necklaces 
+                        Bracelet
+                        Rings" 
+                        loading="lazy" 
+                        width="400" 
+                        height="30"
+                        class="w-100">
+                        </figure>
+                        <a href="/Accessory/mennecklace.html" class="btn btn-secondary" target="_blank">
+                           Men
+                           Necklaces 
+                           Bracelet
+                           Rings
+                        </a>
+                     </li>
+                     <!--Women-->
+                     <li class="category-item">
+                        <figure class="category-banner">
+                        <img src="/img/women_category5_nicless.jpg" 
+                        alt="Women
+                        Necklaces 
+                        Bracelet
+                        Rings" 
+                        loading="lazy" 
+                        width="400" 
+                        height="30"   
+                        class="w-100">
+                        </figure>
+                        <a href="/Accessory/women necklace.html" class="btn btn-secondary" target="_blank">
+                           Women
+                           Necklaces 
+                           Bracelet
+                           Rings
+                        </a>
+                     </li>
+                     <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-6.jpg" 
+                     alt=" Men  Watches" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Accessory/men watches.html" class="btn btn-secondary" target="_blank">
+                        Men  Watches
+                     </a>
+                  </li>
+                  <!-- women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category2_watch.jpg" 
+                     alt="Women  Watches" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Accessory/women watches.html" class="btn btn-secondary" target="_blank">
+                        Women  Watches
+                     </a>
+                  </li>
+                  <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-7.jpg" 
+                     alt="Men Bags & Wallets" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                        class="w-100">
+                     </figure>
+                     <a href="Accessory/menBag.html" class="btn btn-secondary" target="_blank">
+                        Men Bags & Wallets
+                     </a>
+                  </li>
+                  <!-- women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category4_bag.jpg" 
+                     alt="Women Bags & Wallets" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                        class="w-100">
+                     </figure>
+                     <a href="Accessory/womenBag.html" class="btn btn-secondary" target="_blank">
+                        Women Bags & Wallets
+                     </a>
+                  </li>
+                  <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-10.jpg" 
+                     alt="Men Tie" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Accessory/menTie.html" class="btn btn-secondary" target="_blank">
+                        Men Tie
+                     </a>
+                  </li>
+                  <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-8.jpg" 
+                     alt="Men Twill shirt" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="men/twill_shirt.html" class="btn btn-secondary" target="_blank">
+                        Men Twill shirt
+                     </a>
+                  </li>
+                  <!-- women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category7_twill.jpg" 
+                     alt="Women Twill shirt" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="women/twill_shirt.html" class="btn btn-secondary" target="_blank">
+                        Women Twill shirt
+                     </a>
+                  </li>
+                  <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-9.jpg" 
+                     alt="Men Suit" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="men/suit.html" class="btn btn-secondary" target="_blank">
+                        Men Suit
+                     </a>
+                  </li>
+                  <!-- men -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-11.jpg" 
+                     alt="Man bomber jacket" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="men/bomber.html" class="btn btn-secondary" target="_blank">
+                        Man bomber jacket
+                     </a>
+                  </li>
+                  <!-- women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women__category6_dress.jpg" 
+                     alt="Women Dress" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="women/dress.html" class="btn btn-secondary" target="_blank">
+                        Women Dress
+                     </a>
+                  </li>
+                  <!-- men -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-12.jpg" 
+                     alt="Man Shirt" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="men/shirt.html" class="btn btn-secondary" target="_blank">
+                        Man Shirt
+                     </a>
+                  </li>
+                  <!-- women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category10_shirt.jpg" 
+                     alt="Women Shirt" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="women/shirt.html" class="btn btn-secondary" target="_blank">
+                        Women Shirt
+                     </a>
+                  </li>
+                  <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-13.jpg" 
+                     alt="Man T Shirt" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="men/t-Shirt.html" class="btn btn-secondary" target="_blank">
+                        Man T Shirt
+                     </a>
+                  </li>
+                  <!-- Women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category9_T.jpg" 
+                     alt="Women T Shirt" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="women/t_shirt.html" class="btn btn-secondary" target="_blank">
+                        Women T Shirt
+                     </a>
+                  </li>
+               <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-14.jpg" 
+                     alt="Man trousers" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="men/trousers.html" class="btn btn-secondary" target="_blank">
+                        Man trousers
+                     </a>
+                  </li>
+                  <!-- Women -->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category3_shalvar.jpg" 
+                     alt="Women trousers" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="women/shalvar.html" class="btn btn-secondary" target="_blank">
+                        Women trousers
+                     </a>
+                  </li>
+                  <!--Men-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/category-15.jpg" 
+                     alt="Man Shoes" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Shoes men's/Shoes_men.html" class="btn btn-secondary" target="_blank">
+                        Man Shoes
+                     </a>
+                  </li>
+               <!-- Women-->
+                  <li class="category-item">
+                     <figure class="category-banner">
+                     <img src="/img/women_category8_shose.jpg" 
+                     alt="Women Shoes" 
+                     loading="lazy" 
+                     width="400" 
+                     height="30"
+                     class="w-100">
+                     </figure>
+                     <a href="Shoes women's/women's_shoes.html" class="btn btn-secondary" target="_blank">
+                        Women Shoes
+                     </a>
+                  </li>
+               <!--Baby boy-->
+               <li class="category-item">
+                  <figure class="category-banner">
+                  <img src="/img/baby_boy_category.jpg" 
+                  alt="Baby boy" 
+                  loading="lazy" 
+                  width="400" 
+                  height="30"
+                  class="w-100">
+                  </figure>
+                  <a href="#" class="btn btn-secondary" target="_blank">
+                     Baby boy's
+                  </a>
+               </li>
+               <!-- Baby girl -->
+               <li class="category-item">
+                  <figure class="category-banner">
+                  <img src="/img/baby_girl_category.jpg" 
+                  alt="Baby girl" 
+                  loading="lazy" 
+                  width="400" 
+                  height="30"
+                  class="w-100">
+                  </figure>
+                  <a href="#" class="btn btn-secondary" target="_blank">
+                     Baby girl's
+                  </a>
+               </li>
+               </ul>
+            </div>
+      </section> 
+       <!--FOOTER-->
+      <footer>
+         <div class="footer_content">
+             <div class="footer_section about">
+                 <h2>About Us</h2>
+                 <p>
+                  Welcome to our online shop, 
+                  where convenience meets quality!
+                  At SkyMart, we're dedicated to 
+                  providing you with an 
+                  unparalleled shopping experience 
+                  right at your fingertips. 
+                  With a vast selection of products 
+                  ranging from electronics
+                  and gadgets to fashion and home 
+                  essentials,
+                  we're your one-stop destination
+                  for all your needs.</p>
+             </div>
+             <div class="footer_section links">
+               <!--poxel sa-->
+                 <h2>Quick Links</h2>
+                 <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Shop</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                 </ul>
+             </div>
+             <!--Footer Payment Methods-->
+             <div class="footer_section payment_methods">
+               <h2>Accepted Payment Methods</h2>
+               <img src="/footer card/mastercard.png"
+                  alt="mastercard" width="30" height="30">
+                  <img src="/footer card/visa.png"
+                  alt="visa" width="30" height="30">
+                  <img src="/footer card/ArCa.png" 
+                  alt="ArCa" width="30"height="30">
+                  <img src="/footer card/maestro.png" 
+                  alt="Maestro"width="30" height="30">
+                  <img src="/footer card/american-express.png" 
+                  alt="American-express" width="30" height="30">
+                  <img src="/footer card/apple-pay.png" 
+                  alt="Apple-pay" width="30" height="30">
+                  <img src="/footer card/bitcoin-cryptocurrency.png" 
+                  alt="Bitcoin-cryptocurrency" width="30" height="30">
+                  <img src="/footer card/FTN.png" 
+                  alt="FTN" width="30" height="30">
+               <p>Accepted Payment Methods may vary.</p>
+           </div>
+         </div>
+     </footer>        
+</body>
+<!-- JS-->
+<script src="scrpt.js"></script>
